@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width='device-width', initial-scale=1.0">
+    <title>LED</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="layouts">
+        <section class="navbar">
+            <h3>Lampu Cuy Labs</h3>
+        </section>
+        <section class="page-title">
+            <h3>LED Control</h3>
+        </section>
+        <section class="leds">
+            <div class="led">
+                <img src="assets/led-off.png" alt="LED Icon" class="led-image" id="imgKamar">
+                <p>Lampu Kamar</p>
+                <button class="item-submit" id="ledKamar" onclick="setKamar()">Turn ON</button>
+            </div>
+            <div class="led">
+                <img src="assets/led-off.png" alt="LED Icon" class="led-image" id="imgDapur">
+                <p>Lampu Dapur</p>
+                <button class="item-submit" id="ledDapur" onclick="setDapur()">Turn ON</button>
+            </div>
+            <div class="led">
+                <img src="assets/led-off.png" alt="LED Icon" class="led-image" id="imgDepan">
+                <p>Lampu Depan</p>
+                <button class="item-submit" id="ledDepan" onclick="setDepan()">Turn ON</button>
+            </div>
+            <div class="led">
+                <img src="assets/led-off.png" alt="LED Icon" class="led-image" id="imgBelakang">
+                <p>Lampu Belakang</p>
+                <button class="item-submit" id="ledBelakang" onclick="setBelakang()">Turn ON</button>
+            </div>
+           
+        </section>
+
+        <section class="buttonBar">
+            <ul>
+                <li><a href="led-control.html"><i class="fa-solid fa-home"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-lightbulb"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-fan"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-user"></i></a></li>
+            </ul>
+        </section>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

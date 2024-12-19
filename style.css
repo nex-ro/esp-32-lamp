@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Titillium Web", sans-serif;
+    box-sizing: border-box;
+}
+
+.layouts {
+    height: 100vh; /* Membatasi tinggi maksimal pada layar */
+    max-width: 476px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: #f8f8f8;
+}
+
+.navbar {
+    background-color: #579fff;
+    padding: 16px;
+    text-align: center;
+    flex-shrink: 0; /* Navbar tetap tidak berubah ukuran */
+}
+
+.navbar h3 {
+    color: white;
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+.items {
+    flex: 1; /* Mengisi ruang di antara navbar dan button bar */
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    overflow-y: auto; /* Scrollable jika konten terlalu banyak */
+    padding: 16px;
+    background-color: #f8f8f8;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 16px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.item:hover {
+    transform: translateY(-5px);
+}
+
+.item-image {
+    width: 50%;
+    height: auto;
+    object-fit: contain;
+}
+
+.item-submit {
+    width: 80%;
+    padding: 10px;
+    background-color: #579fff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.item-submit:hover {
+    background-color: #447acc;
+}
+
+.buttonBar{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+background-color: #579fff;
+width: 100%;
+}
+
+.buttonBar ul{
+    display: flex;
+    width: 100% ;
+    list-style-type: none;
+    padding: 8px;
+}
+
+.buttonBar ul {
+    display: flex;
+    list-style-type: none;
+    padding: 8px;
+    margin: 0;
+}
+
+.buttonBar ul li {
+    flex: 1;
+    text-align: center;
+}
+
+.buttonBar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    display: block;
+    transition: transform 0.3s, color 0.3s ease-in-out;
+}
+
+.buttonBar ul li a:hover {
+    transform: scale(1.1);
+    color: #e1efff;
+}
+
+.leds{
+    display: grid;
+    gap: 8px;
+    padding: 16px;
+    grid-template-columns: repeat(2,1fr);
+}
+.led{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 8px;
+    background-color: white;
+    box-shadow: 0px 0px 4px 1px #999;
+}
+.led p{
+    text-align: center;
+    font-weight: 600;
+
+}
+
+.led-image{
+    width:100px;
+    object-fit: cover;
+}
+.page-title{
+    padding: 8px;
+}
+.page-title{
+    text-align: center;
+    font-weight: 800;
+    font-size: x-large;
+}
